@@ -1,4 +1,3 @@
-
 package algorithms.mazeGenerators;
 
 
@@ -28,12 +27,14 @@ public class Maze  {
         //Represent the offset in the input array
         int k=0;
         int sum=0;
+        int Current_value=0;
         /**step 1:Convert+Separate The MAZE Start Point values:(byte StartRow,byte StartColumn) To (int StartRow,int StartColumn) */
         //step 1.a: Separate the int StartRow
         while(input[k]!=-1)
         {
-        sum=sum+input[k];
-        k++;
+            Current_value=(int) input[k] & 0xFF;
+            sum=sum+Current_value;
+            k++;
         }
         k++;
         int StartRow=sum;
@@ -41,7 +42,8 @@ public class Maze  {
         //step 1.b: Separate the int StartColumn
         while(input[k]!=-1)
         {
-            sum=sum+input[k];
+            Current_value=(int) input[k] & 0xFF;
+            sum=sum+Current_value;
             k++;
         }
         k++;
@@ -51,10 +53,11 @@ public class Maze  {
         this.Start=new Position(StartRow,StartColumn);
 
         /**step 2: Convert+Separate The MAZE Goal Point values:(byte GoalRow,byte GoalColumn) To (int GoalRow,int GoalColumn) */
-        //step 2.a: Separate the int GoaltRow
+        //step 2.a: Separate the int GoalRow
         while(input[k]!=-1)
         {
-            sum=sum+input[k];
+            Current_value=(int) input[k] & 0xFF;
+            sum=sum+Current_value;
             k++;
         }
         k++;
@@ -63,7 +66,8 @@ public class Maze  {
         //step 2.b: Separate the int GoalColumn
         while(input[k]!=-1)
         {
-            sum=sum+input[k];
+            Current_value=(int) input[k] & 0xFF;
+            sum=sum+Current_value;
             k++;
         }
         k++;
@@ -77,7 +81,8 @@ public class Maze  {
         //step 2.a: Separate the LimitRow
         while(input[k]!=-1)
         {
-            sum=sum+input[k];
+            Current_value=(int) input[k] & 0xFF;
+            sum=sum+Current_value;
             k++;
         }
         k++;
@@ -86,7 +91,8 @@ public class Maze  {
         //step 2.b: Separate the int LimitColumn
         while(input[k]!=-1)
         {
-            sum=sum+input[k];
+            Current_value=(int) input[k] & 0xFF;
+            sum=sum+Current_value;
             k++;
         }
         k++;
@@ -104,7 +110,6 @@ public class Maze  {
     public Position getStartPosition() {
         return this.Start;
     }
-
 
     /**
      * @return goalPosition
