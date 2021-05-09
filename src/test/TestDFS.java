@@ -1,11 +1,9 @@
-package algorithms.test;
+package test;
 
-import algorithms.mazeGenerators.IMazeGenerator;
 import algorithms.mazeGenerators.MyMazeGenerator;
-import algorithms.mazeGenerators.SimpleMazeGenerator;
 import algorithms.mazeGenerators.*;
 import algorithms.search.*;
-import java.util.ArrayList;
+
 public class TestDFS {
     public static void main(String[] args) throws Exception {
         /**** Basic test Unit 1: */

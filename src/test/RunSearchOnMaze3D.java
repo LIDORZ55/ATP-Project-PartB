@@ -1,4 +1,4 @@
-package algorithms.test;
+package test;
 
 import algorithms.maze3D.AMaze3DGenerator;
 import algorithms.maze3D.Maze3D;

@@ -7,10 +7,12 @@ package algorithms.search;
 //For example to the problem  state: {0,0}->{1,1}
 //4: (MazeState)-string "{1,1}",cost=15,camefrom={0,0}
 
+import java.io.Serializable;
+
 /**
  * This Class Make AN Adaptation(OR Transformation) To the Class Position in Maze
  */
-public class MazeState extends AState {
+public class MazeState extends AState implements Serializable {
     int Row;
     int Column;
 

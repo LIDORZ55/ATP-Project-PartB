@@ -1,5 +1,6 @@
 package IO;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
@@ -15,6 +16,8 @@ public class MyCompressorOutputStream extends OutputStream {
     public MyCompressorOutputStream(OutputStream outputStream) {
         this.out = outputStream;
     }
+
+
 
     /**
      * Writes the specified byte to this output stream. The general

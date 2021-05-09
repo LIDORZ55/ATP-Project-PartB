@@ -1,11 +1,10 @@
 package algorithms.mazeGenerators;
 
 
+import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
-public class Maze  {
+public class Maze implements Serializable {
     private int[][] mazeStruct;
     private Position Start;
     private Position Goal;
@@ -165,6 +164,7 @@ public class Maze  {
 
 
 
+/*
     public Map<Position,Integer > getPossiblePosition(Position position){ // delete prob
         Map<Position, Integer> map = new HashMap<>();
         int Cur_row=position.getRowIndex();
@@ -173,28 +173,36 @@ public class Maze  {
         int Step2_Row,Step2_column=0;
         Boolean IsLegal_Upper,IsLegal_Lower,IsLegal_Right,IsLegal_Left=false;
 
-        /****Upper-(1,1)->(0,1)****/
+        */
+/****Upper-(1,1)->(0,1)****//*
+
         New_Row=Cur_row-1;
         New_column=Cur_column;
         IsLegal_Upper=this.IsLegal(New_Row,New_column);
         if(IsLegal_Upper==true)
             map.put(new Position(New_Row,New_column),10);
 
-        /****Lower-(1,1)->(2,1)****/
+        */
+/****Lower-(1,1)->(2,1)****//*
+
         New_Row=Cur_row+1;
         New_column=Cur_column;
         IsLegal_Lower=this.IsLegal(New_Row,New_column);
         if(IsLegal_Lower==true)
             map.put(new Position(New_Row,New_column),10);
 
-        /****Left-(1,1)->(2,1)****/
+        */
+/****Left-(1,1)->(2,1)****//*
+
         New_Row=Cur_row;
         New_column=Cur_column-1;
         IsLegal_Left=this.IsLegal(New_Row,New_column);
         if(IsLegal_Left==true)
             map.put(new Position(New_Row,New_column),10);
 
-        /****Right-(1,1)->(0,1)****/
+        */
+/****Right-(1,1)->(0,1)****//*
+
         New_Row=Cur_row;
         New_column=Cur_column+1;
         IsLegal_Right=this.IsLegal(New_Row,New_column);
@@ -231,6 +239,7 @@ public class Maze  {
             map.put(new Position(New_Row,New_column),15);
         return map;
     }
+*/
 
 
     /**

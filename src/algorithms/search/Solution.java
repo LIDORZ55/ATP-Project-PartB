@@ -1,12 +1,13 @@
 package algorithms.search;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 
 /**
  * This Class represent The soultion of The Maze-Its Include TheGoldPath
  */
-public class Solution {
+public class Solution implements Serializable {
     //Its save the whole AStates that represent the GoldPath
     ArrayList<AState> TheGoldPath;
     //Its represent the vertx that the Solution Algorithm has Developed

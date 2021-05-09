@@ -1,8 +1,9 @@
 package algorithms.search;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public abstract class AState implements  Comparable<AState> {
+public abstract class AState implements  Comparable<AState>, Serializable {
     //the attribute of AState:
     private String state;
     private int cost;

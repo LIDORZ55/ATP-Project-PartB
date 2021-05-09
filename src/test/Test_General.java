@@ -1,6 +1,4 @@
-package algorithms.test; /**
- * Created by Aviad on 5/10/2017.
- */
+package test;
 
 import algorithms.mazeGenerators.*;
 import algorithms.search.*;
@@ -8,8 +6,7 @@ import algorithms.search.*;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Main {
-
+public class Test_General {
     public static String m_resultsFileName = "results.txt";
 
     public static enum TestStatus {
@@ -47,11 +44,6 @@ public class Main {
         }
     }
 
-    /**
-     * @param mazeGenerator
-     * @param rows
-     * @param columns
-     */
     private static void Test_MazeGenerator(IMazeGenerator mazeGenerator, int rows, int columns) {
         boolean testStatus = true;
         try {

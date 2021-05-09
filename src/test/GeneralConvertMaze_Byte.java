@@ -1,4 +1,4 @@
-package algorithms.test;
+package test;
 
 import algorithms.mazeGenerators.AMazeGenerator;
 import algorithms.mazeGenerators.Maze;

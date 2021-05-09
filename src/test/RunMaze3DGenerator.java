@@ -1,10 +1,6 @@
-package algorithms.test;
+package test;
 
 import algorithms.maze3D.*;
-import algorithms.mazeGenerators.*;
-import algorithms.search.*;
-
-import java.util.ArrayList;
 
 public class RunMaze3DGenerator {
     public static void main(String[] args) throws Exception {
